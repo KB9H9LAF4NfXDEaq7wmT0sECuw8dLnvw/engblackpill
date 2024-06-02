@@ -4,7 +4,7 @@ import path from "path";
 import matter from "gray-matter";
 import { redirect } from "next/navigation";
 
-const getFrontMatter = () => {
+export const getFrontMatter = () => {
   const directoryPath = path.join(process.cwd(), "posts");
 
   const slugs = fs
@@ -50,9 +50,9 @@ export default async function BlogPage({
   const parsedContent = marked.parse(content);
 
   return (
-    <div>
+    <div id="blog">
       <div>
-        <h1>{title}</h1>
+        <h1 className="title">{title}</h1>
       </div>
       <div>
         <h2>{date}</h2>

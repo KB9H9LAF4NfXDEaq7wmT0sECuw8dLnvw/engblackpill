@@ -1,4 +1,21 @@
+body {
+  padding: 0 1rem;
+}
+
+nav h1 {
+  margin: 0;
+}
+
 nav {
   background-color: grey;
   color: white;
+}
+
+#blog {
+  max-width: 65ch;
+  margin: auto;
+}
+
+#blog .title {
+  text-transform: uppercase;
 }
